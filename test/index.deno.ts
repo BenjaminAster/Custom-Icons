@@ -1,7 +1,7 @@
 
 /* 
 
-deno run --unstable --allow-read --allow-write=. --allow-net index.deno.ts
+deno run --unstable --allow-read --allow-write=. --allow-net test/index.deno.ts
 
 */
 
@@ -80,7 +80,7 @@ const icons = [
 						encodeURI(`>`), `>`
 					).replaceAll(
 						`'`, `%27`
-					// ).replace(`viewBox="0 0 16 16"`, `viewBox="0 0 18 18"`)
+						// ).replace(`viewBox="0 0 16 16"`, `viewBox="0 0 18 18"`)
 					).replace(/( width="16" height="16" fill="currentColor" class="bi [a-z-]+" viewBox="0 0 16 16")/, ` viewBox="-1 -1 18 18"`)
 				),
 			})
@@ -89,3 +89,6 @@ const icons = [
 		).join("\n"),
 	);
 })();
+
+
+export { };

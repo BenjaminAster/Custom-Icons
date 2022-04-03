@@ -1,0 +1,72 @@
+
+- Bootstrap icons: https://icons.getbootstrap.com - https://github.com/twbs/icons
+- Heroicons: https://heroicons.com - https://github.com/tailwindlabs/heroicons
+- CSS.gg: https://css.gg/app - https://github.com/astrit/css.gg
+- Tabler icons: https://tabler-icons.io - https://github.com/tabler/tabler-icons
+- Feather icons: https://feathericons.com - https://github.com/feathericons/feather
+- FontAwesome: https://fontawesome.com/search - https://github.com/FortAwesome/Font-Awesome
+- LineAwesome: https://icons8.com/line-awesome - https://github.com/icons8/line-awesome
+- Material design icons: https://fonts.google.com/icons - https://github.com/google/material-design-icons
+- IcoMoon: https://icomoon.io/preview-free.html - https://github.com/Keyamoon/IcoMoon-Free
+- Maki icons:https://labs.mapbox.com/maki-icons/ - https://github.com/mapbox/maki
+- Open Iconic icons: https://useiconic.com/open/ - https://github.com/iconic/open-iconic
+- Typicons: https://www.s-ings.com/typicons/ - https://github.com/stephenhutchings/typicons.font
+- Microns: https://www.s-ings.com/projects/microns-icon-font/ - https://github.com/stephenhutchings/microns
+- Fontelico: https://fontello.com - https://github.com/fontello/fontelico.font
+- Brandico: https://fontello.github.io/brandico.font/demo.html - https://github.com/fontello/brandico.font
+- Ionicons: https://ionic.io/ionicons - https://github.com/ionic-team/ionicons
+- Iconoir: https://iconoir.com - https://github.com/lucaburgio/iconoir
+- Fluenticons: https://fluenticons.co - https://github.com/microsoft/fluentui-system-icons
+- Phosphoricons: https://phosphoricons.com - https://github.com/phosphor-icons/phosphor-icons
+- RemixIcon: https://remixicon.com - https://github.com/Remix-Design/RemixIcon
+- Ant design icons: https://ant.design/components/icon/ - https://github.com/ant-design/ant-design-icons
+- Boxicons: https://boxicons.com - https://github.com/atisawd/boxicons
+- Devicons: https://vorillaz.github.io/devicons/#/dafont - https://github.com/vorillaz/devicons
+- Octicons: https://primer.style/octicons/ - https://github.com/primer/octicons
+- Grommet icons: https://icons.grommet.io - https://github.com/grommet/grommet-icons
+- Simple icons: https://simpleicons.org - https://github.com/simple-icons/simple-icons
+- Codicons: https://microsoft.github.io/vscode-codicons/dist/codicon.html - https://github.com/microsoft/vscode-codicons
+- System UIcons: https://systemuicons.com - https://github.com/CoreyGinnivan/system-uicons
+- Eva icons: https://akveo.github.io/eva-icons - https://github.com/akveo/eva-icons
+- Akar icons: https://akaricons.com - https://github.com/artcoholic/akar-icons
+- Jam icons: https://jam-icons.com - https://github.com/michaelampr/jam
+- Fontisto icons: https://fontisto.com/icons - https://github.com/kenangundogan/fontisto
+- Evil icons: https://evil-icons.io - https://github.com/evil-icons/evil-icons
+- Linearicons: https://linearicons.com/free - https://github.com/cjpatoilo/linearicons
+- Iconic icons: https://iconic.app - https://github.com/Make-Lemonade/iconicicons
+- Majesticons: https://www.majesticons.com - https://github.com/halfmage/majesticons
+- Olicons: http://olicons.yemaosheji.com - https://github.com/owlling/olicons
+- Bytesize icons: https://danklammer.com/bytesize-icons/ - https://github.com/danklammer/bytesize-icons
+- Dashicons: https://developer.wordpress.org/resource/dashicons/ - https://github.com/WordPress/dashicons
+- Themify icons: https://themify.me/themify-icons - https://github.com/lykmapipo/themify-icons/tree/master/SVG
+- Dripicons: http://demo.amitjakhu.com/dripicons/ - https://github.com/amitjakhu/dripicons
+- Genericons: https://genericons.com - https://github.com/Automattic/genericons-neue
+- Stroke 7: https://themes-pixeden.com/font-demos/7-stroke/ - https://github.com/olimsaidov/pixeden-stroke-7-icon
+
+---
+
+- Weather icons: https://erikflowers.github.io/weather-icons/ - https://github.com/erikflowers/weather-icons
+- Elusive: https://github.com/dovy/elusive-iconfont
+- Entypo: http://www.entypo.com/ - https://github.com/danielbruce/entypo
+- LineIcons: https://lineicons.com/icons/ - https://github.com/GrayGrids/LineIcons
+- Health icons: https://healthicons.org - https://github.com/resolvetosavelives/healthicons
+- Basicons: https://basicons.xyz
+- Zocial icons: https://github.com/smcllns/css-social-buttons
+- Zwicon: https://www.zwicon.com
+- Icono: https://saeedalipoor.github.io/icono/ - https://github.com/saeedalipoor/icono
+- Koloicons: https://www.koloicons.com/icons
+- Supercons: https://supercons.vercel.app - https://github.com/lachlanjc/supercons
+- CSSIcon: https://cssicon.space - https://github.com/wentin/cssicon
+- Foundation Icon Fonts: https://legacy-zurb.netlify.app/playground/foundation-icon-fonts-3 - https://github.com/mandross/foundation-icon-fonts-3
+- Elegant icon font: https://www.elegantthemes.com/blog/resources/elegant-icon-font - https://github.com/heimrichhannot/elegant-icons
+- MFG Labs icons: https://mfglabs.github.io/mfglabs-iconset/ - https://github.com/MfgLabs/mfglabs-iconset
+- Metrize icons: https://www.alessioatzeni.com/metrize-icons/ - https://github.com/decodigo/WP-Metrize-Icons
+- Ligature Symbols: https://kudakurage.com/ligature_symbols/ - https://github.com/kudakurage/LigatureSymbols
+- Devicon: https://devicon.dev - https://github.com/devicons/devicon
+
+---
+
+- IconFinder: https://www.iconfinder.com/icons
+- Fontello: https://fontello.com
+- React icons: https://react-icons.github.io/react-icons/
+- Iconduck: https://iconduck.com
