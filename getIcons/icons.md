@@ -1,14 +1,20 @@
 
 - Bootstrap icons: https://icons.getbootstrap.com - https://github.com/twbs/icons
 - Heroicons: https://heroicons.com - https://github.com/tailwindlabs/heroicons
-- CSS.gg: https://css.gg/app - https://github.com/astrit/css.gg
+- Majesticons: https://www.majesticons.com - https://github.com/halfmage/majesticons
 - Tabler icons: https://tabler-icons.io - https://github.com/tabler/tabler-icons
 - Feather icons: https://feathericons.com - https://github.com/feathericons/feather
 - FontAwesome: https://fontawesome.com/search - https://github.com/FortAwesome/Font-Awesome
-- LineAwesome: https://icons8.com/line-awesome - https://github.com/icons8/line-awesome
+- CSS.gg: https://css.gg/app - https://github.com/astrit/css.gg
 - Material design icons: https://fonts.google.com/icons - https://github.com/google/material-design-icons
+- Boxicons: https://boxicons.com - https://github.com/atisawd/boxicons
+
+---
+
+- RemixIcon: https://remixicon.com - https://github.com/Remix-Design/RemixIcon
+- LineAwesome: https://icons8.com/line-awesome - https://github.com/icons8/line-awesome
 - IcoMoon: https://icomoon.io/preview-free.html - https://github.com/Keyamoon/IcoMoon-Free
-- Maki icons:https://labs.mapbox.com/maki-icons/ - https://github.com/mapbox/maki
+- Maki icons: https://labs.mapbox.com/maki-icons/ - https://github.com/mapbox/maki
 - Open Iconic icons: https://useiconic.com/open/ - https://github.com/iconic/open-iconic
 - Typicons: https://www.s-ings.com/typicons/ - https://github.com/stephenhutchings/typicons.font
 - Microns: https://www.s-ings.com/projects/microns-icon-font/ - https://github.com/stephenhutchings/microns
@@ -18,9 +24,7 @@
 - Iconoir: https://iconoir.com - https://github.com/lucaburgio/iconoir
 - Fluenticons: https://fluenticons.co - https://github.com/microsoft/fluentui-system-icons
 - Phosphoricons: https://phosphoricons.com - https://github.com/phosphor-icons/phosphor-icons
-- RemixIcon: https://remixicon.com - https://github.com/Remix-Design/RemixIcon
 - Ant design icons: https://ant.design/components/icon/ - https://github.com/ant-design/ant-design-icons
-- Boxicons: https://boxicons.com - https://github.com/atisawd/boxicons
 - Devicons: https://vorillaz.github.io/devicons/#/dafont - https://github.com/vorillaz/devicons
 - Octicons: https://primer.style/octicons/ - https://github.com/primer/octicons
 - Grommet icons: https://icons.grommet.io - https://github.com/grommet/grommet-icons
@@ -34,7 +38,6 @@
 - Evil icons: https://evil-icons.io - https://github.com/evil-icons/evil-icons
 - Linearicons: https://linearicons.com/free - https://github.com/cjpatoilo/linearicons
 - Iconic icons: https://iconic.app - https://github.com/Make-Lemonade/iconicicons
-- Majesticons: https://www.majesticons.com - https://github.com/halfmage/majesticons
 - Olicons: http://olicons.yemaosheji.com - https://github.com/owlling/olicons
 - Bytesize icons: https://danklammer.com/bytesize-icons/ - https://github.com/danklammer/bytesize-icons
 - Dashicons: https://developer.wordpress.org/resource/dashicons/ - https://github.com/WordPress/dashicons
