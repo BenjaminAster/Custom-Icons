@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="dark">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="robots" content="all" />
+	<meta name="theme-color" content="blueViolet" />
+	<meta name="description"
+		content="Choose your own icons from various different icon sets and generate a CSS file with only those icons as inlined data-URIs." />
+
+	<base href="./" />
+
+	<link rel="icon" href="./assets/icon.svg" />
+	<link rel="manifest" href="./manifest.webmanifest" />
+
+	<link rel="stylesheet" href="./css/main.css" />
+	<link rel="preload" as="style" href="./css/icons.css" />
+	<link rel="preload" as="style" href="./css/global.css" />
+	<link rel="preload" as="style" href="./css/iconSetChooser.css" />
+	<link rel="preload" as="style" href="./css/iconList.css" />
+	<link rel="preload" as="style" href="./css/header.css" />
+	<link rel="preload" as="style" href="./css/selectedIcons.css" />
+
+	<script type="module" src="./js/main.js"></script>
+	<link rel="modulepreload" href="./js/iconSets.js" />
+	<link rel="modulepreload" href="./js/utils.js" />
+	<link rel="modulepreload" href="./js/colorScheme.js" />
+	<link rel="modulepreload" href="./js/pwa.js" />
+
+	<link rel="preload" as="fetch" crossorigin href="./icons/heroicons.min.json" />
+
+	<title>Custom icons</title>
+</head>
+
+<body>
+	<noscript>
+		Please enable JavaScript to view this site.
+		<hr />
+	</noscript>
+
+	<header>
+		<a href="https://github.com/BenjaminAster/Custom-Icons" class="icon:github" title="view on GitHub"></a>
+
+		<ul id="color-scheme-chooser" title="change color scheme">
+			<li>
+				<label>
+					<input type="radio" name="color-scheme" data-color-scheme="os-default" />
+					<div class="icon:circle-half">
+						<span>OS default</span>
+					</div>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="radio" name="color-scheme" data-color-scheme="dark" />
+					<div class="icon:moon-fill">
+						<span>dark</span>
+					</div>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="radio" name="color-scheme" data-color-scheme="light" />
+					<div class="icon:sun-fill">
+						<span>light</span>
+					</div>
+				</label>
+			</li>
+		</ul>
+	</header>
+
+	<main>
+		<section aria-label="information" class="info">
+			<h1>Custom icons</h1>
+			<p>
+				Choose your own icons from various different icon sets and generate a CSS file
+				with only those icons as inlined data-URIs.
+			</p>
+
+			<details>
+				<summary>
+					<h2>How to use</h2>
+				</summary>
+				<p>
+					Select the icons you need from your favorite icon sets and click the "Copy CSS" button.
+					Then paste the CSS into your project.
+					<br />
+					To display an icon in your project,
+					simply add the class <code>icon:</code> followed by the name of the icon.
+					For example, to display the <code>home</code> icon in your project,
+					add the class <code>icon:home</code> to an element.
+					<br />
+					The CSS also includes a custom property for every icon.
+					To dynamically change the icon from your CSS
+					(for example, if you want a different icon depending on whether a checkbox is checked),
+					add an <code>icon:</code> class to the element without the icon name,
+					and set the <code>--icon</code> custom property to the icon's custom property.
+					<br />
+					For example, to display the <code>home</code> icon with CSS,
+					add the class <code>icon:</code> to an element,
+					and set the custom property <code>--icon</code> to <code>var(--icon-home)</code>.
+				</p>
+			</details>
+		</section>
+
+		<section aria-label="selected icons" class="selected-icons">
+			<h2>Selected icons:</h2>
+			<ul id="selected-icons">
+				<template>
+					<li data-icon-set data-icon-index>
+						<button>
+							<div class="icon"></div>
+							<span class="icon-name"></span>
+						</button>
+					</li>
+				</template>
+			</ul>
+			<button id="copy-css">Copy CSS</button>
+		</section>
+
+		<section aria-label="choose icon sets" class="choose-icon-sets">
+			<h2>Choose your icon sets:</h2>
+			<ul id="icon-set-chooser">
+				<template>
+					<li data-icon-set>
+						<label>
+							<input type="checkbox" />
+							<div>
+								<div class="checked-sign icon:"></div>
+								<span class="name"></span>
+								<a href title="website" class="website icon:box-arrow-up-right"></a>
+								<a href title="repository" class="repository icon:github"></a>
+							</div>
+						</label>
+					</li>
+				</template>
+			</ul>
+		</section>
+
+		<section aria-label="icons">
+			<ul id="icon-set-list">
+				<template>
+					<li data-icon-set>
+						<h2 class="name"></h2>
+						<div class="loading-message">Loading...</div>
+						<ul class="icons">
+							<template>
+								<li data-icon-index>
+									<label>
+										<input type="checkbox" />
+										<div>
+											<div class="icon"></div>
+											<span class="icon-name"></span>
+										</div>
+									</label>
+								</li>
+							</template>
+						</ul>
+					</li>
+				</template>
+			</ul>
+		</section>
+	</main>
+</body>
+
+</html>

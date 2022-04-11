@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@import url("./global.css");
+@import url("./icons.css");
+@import url("./iconSetChooser.css");
+@import url("./iconList.css");
+@import url("./header.css");
+@import url("./selectedIcons.css");
+
+:root {
+	color-scheme: dark;
+
+	--background: #121218;
+	--gray-1: #222228;
+	--gray-2: #323238;
+	--gray-3: #424248;
+	--gray-4: #525258;
+
+	--primary: blueViolet;
+	--primary-transparent: #9a2be233;
+
+	--secondary: royalBlue;
+
+	--text-gradient-from: deepSkyBlue;
+	--text-gradient-to: violet;
+
+	scrollbar-color: var(--primary) transparent;
+}
+
+:root[data-color-scheme="light"] {
+	color-scheme: light;
+
+	--background: #f8f8fe;
+	--gray-1: #e8e8ee;
+	--gray-2: #d8d8de;
+	--gray-3: #c8c8ce;
+	--gray-4: #b8b8be;
+
+	--text-gradient-from: royalBlue;
+	--text-gradient-to: rebeccaPurple;
+}
+
+body {
+	font-family: system-ui;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: var(--background);
+	overflow-y: scroll;
+	line-height: 1.4em;
+}
+
+::-webkit-scrollbar {
+	inline-size: 1rem;
+}
+
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-thumb {
+	background-color: var(--primary);
+	block-size: 1rem;
+	border: .25rem solid transparent;
+	border-radius: .5rem;
+	background-clip: padding-box;
+}
+
+.info {
+	padding-inline: 1rem;
+	padding-block: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: .8rem;
+}
+
+.info details {
+	border-radius: .4rem;
+	background-color: var(--gray-1);
+	border: 2px dashed var(--gray-3);
+}
+
+.info details > p {
+	padding-inline: .6rem;
+	padding-block-end: .5rem;
+}
+
+.info details > summary::marker {
+	color: transparent;
+}
+
+.info details > summary {
+	position: relative;
+	padding-inline-start: .3rem;
+	box-sizing: border-box;
+	padding-block: .4rem;
+	padding-inline: 1rem .6rem;
+}
+
+.info details > summary::before {
+	content: "🍕"; /* https://youtu.be/6w2OsuywVcE */
+	place-content: center;
+	position: absolute;
+	transform: translate(.1em, .3em) rotate(-60deg);
+	inset-inline-start: .5em;
+	inset-block: 0;
+	transition: transform .2s;
+}
+
+.info details > summary h2 {
+	display: inline;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.info details code {
+	background-color: var(--gray-2);
+	padding-block: .1rem;
+	padding-inline: .25rem;
+	border-radius: .3rem;
+	border: 1px solid var(--gray-3);
+	white-space: nowrap;
+}
+
+.info details[open] > summary::before {
+	transform: translate(-.3em, .2em) rotate(30deg);
+}
+

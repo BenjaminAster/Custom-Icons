@@ -28,20 +28,20 @@ export default async () => {
 
 			svg.removeAttribute("width");
 			svg.removeAttribute("height");
+			svg.setAttribute("viewbox", "0 0 24 24");
 
 			return {
 				name,
 				tags: name.split("-"),
-				svg: svg.outerHTML,
+				svg: svg.outerHTML.replace(` viewbox=`, ` viewBox=`),
+				style,
 			};
 		}));
 
 	}))).flat();
 
 	return {
-		name: "Tabler icons",
-		website: "https://tabler-icons.io",
-		repository: "https://github.com/tabler/tabler-icons",
+		name: "Boxicons",
 		icons,
 	};
 };

@@ -19,14 +19,12 @@ export default async () => {
 		return {
 			name,
 			tags: name.split("-"),
-			svg: svg.outerHTML,
+			svg: svg.outerHTML.replace(` viewbox=`, ` viewBox=`),
 		};
 	});
 
 	return {
 		name: "CSS.gg",
-		website: "https://css.gg/app",
-		repository: "https://github.com/astrit/css.gg",
 		icons,
 	};
 };

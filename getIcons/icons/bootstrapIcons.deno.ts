@@ -4,10 +4,12 @@ import { DOMParser } from "https://deno.land/x/deno_dom@v0.1.21-alpha/deno-dom-w
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export default async () => {
-	let names = await (await globalThis.fetch("https://api.github.com/repos/twbs/icons/contents/icons")).json();
+	// let names = await (await globalThis.fetch("https://api.github.com/repos/twbs/icons/contents/icons")).json();
+	let names = Object.keys(await (await globalThis.fetch("https://github.com/twbs/icons/raw/main/font/bootstrap-icons.json")).json());
 
-	const icons: Record<string, any>[] = await Promise.all(names.map(async ({ name: fileName }: { name: string }) => {
-		const name = fileName.replace(/\.svg$/, "");
+	// const icons: Record<string, any>[] = await Promise.all(names.map(async ({ name: fileName }: { name: string }) => {
+	const icons: Record<string, any>[] = (await Promise.all(names.map(async (name: string) => {
+		// const name = fileName.replace(/\.svg$/, "");
 
 		await sleep(Math.random() * 10_000);
 
@@ -19,10 +21,11 @@ export default async () => {
 			"text/html",
 		)!.body.firstElementChild!;
 
+		if (!svg) return undefined!;
+
 		svg.removeAttribute("width");
 		svg.removeAttribute("height");
 		svg.removeAttribute("class");
-		svg.setAttribute("viewBox", "-1 -1 18 18");
 
 		const metaMarkdown = (await (await globalThis.fetch(`https://raw.githubusercontent.com/twbs/icons/main/docs/content/icons/${name}.md`)).text()).replaceAll("\r", "");
 
@@ -34,14 +37,12 @@ export default async () => {
 		return {
 			name,
 			tags,
-			svg: svg.outerHTML,
+			svg: svg.outerHTML.replace(` viewbox="0 0 16 16"`, ` viewBox="-1 -1 18 18"`),
 		};
-	}));
+	}))).filter(Boolean);
 
 	return {
 		name: "Bootstrap icons",
-		website: "https://icons.getbootstrap.com",
-		repository: "https://github.com/twbs/icons",
 		icons,
 	};
 };

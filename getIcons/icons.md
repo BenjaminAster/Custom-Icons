@@ -45,6 +45,14 @@
 - Dripicons: http://demo.amitjakhu.com/dripicons/ - https://github.com/amitjakhu/dripicons
 - Genericons: https://genericons.com - https://github.com/Automattic/genericons-neue
 - Stroke 7: https://themes-pixeden.com/font-demos/7-stroke/ - https://github.com/olimsaidov/pixeden-stroke-7-icon
+- Pixelarticons: https://pixelarticons.com - https://github.com/halfmage/pixelarticons
+- CoreUI icons: https://coreui.io/icons/ - https://github.com/coreui/coreui-icons
+- Hola SVG icons: https://icons.holasvg.com - https://github.com/marianabeldi/holasvg-icons
+- IconPark: https://iconpark.oceanengine.com/official - https://iconpark.oceanengine.com/official
+- Teenyicons: https://teenyicons.com - https://github.com/teenyicons/teenyicons
+- Mono icons: https://icons.mono.company - https://github.com/mono-company/mono-icons
+- Ikonate: https://ikonate.com - https://github.com/mikolajdobrucki/ikonate
+- Radix icons: https://icons.modulz.app - https://github.com/radix-ui/icons
 
 ---
 
@@ -66,6 +74,8 @@
 - Metrize icons: https://www.alessioatzeni.com/metrize-icons/ - https://github.com/decodigo/WP-Metrize-Icons
 - Ligature Symbols: https://kudakurage.com/ligature_symbols/ - https://github.com/kudakurage/LigatureSymbols
 - Devicon: https://devicon.dev - https://github.com/devicons/devicon
+- Eos icons: https://eos-icons.com - https://github.com/EOS-uiux-Solutions/eos-icons-landing
+- Uxwing icons: https://uxwing.com
 
 ---
 

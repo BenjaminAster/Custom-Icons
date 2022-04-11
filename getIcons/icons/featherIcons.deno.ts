@@ -21,14 +21,12 @@ export default async () => {
 		return {
 			name,
 			tags: [...name.split("-"), ...tags],
-			svg: svg.outerHTML,
+			svg: svg.outerHTML.replace(` viewbox=`, ` viewBox=`),
 		};
 	}));
 
 	return {
 		name: "Feather icons",
-		website: "https://feathericons.com",
-		repository: "https://github.com/feathericons/feather",
 		icons,
 	};
 };

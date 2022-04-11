@@ -21,14 +21,12 @@ export default async () => {
 		return {
 			name,
 			tags,
-			svg: svg.outerHTML,
+			svg: svg.outerHTML.replace(` viewbox=`, ` viewBox=`),
 		};
 	}));
 
 	return {
 		name: "Tabler icons",
-		website: "https://tabler-icons.io",
-		repository: "https://github.com/tabler/tabler-icons",
 		icons,
 	};
 };

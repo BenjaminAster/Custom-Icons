@@ -7,13 +7,12 @@ export default async () => {
 			name,
 			tags: [...name.split("-"), style],
 			svg: svgObject[style].raw,
+			style,
 		}));
 	}).flat();
 
 	return {
 		name: "FontAwesome",
-		website: "https://fontawesome.com/icons",
-		repository: "https://github.com/FortAwesome/Font-Awesome",
 		icons,
 	};
 };

@@ -37,15 +37,14 @@ export default async () => {
 			return {
 				name,
 				tags: [...name.split("-"), ...(style ? [style.toLowerCase()] : [])],
-				svg: svg.outerHTML,
+				svg: svg.outerHTML.replace(` viewbox=`, ` viewBox=`),
+				style: style ? style.toLowerCase() : "filled",
 			};
 		}))).filter(Boolean);
 	}))).flat();
 
 	return {
 		name: "Material icons",
-		website: "https://fonts.google.com/icons",
-		repository: "https://github.com/google/material-design-icons",
 		icons,
 	};
 };

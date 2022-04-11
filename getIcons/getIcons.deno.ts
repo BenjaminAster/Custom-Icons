@@ -17,14 +17,14 @@ import boxIcons from "./icons/boxIcons.deno.ts";
 
 const icons = {
 	"bootstrap-icons": await bootstrapIcons(),
-	heroicons: await heroicons(),
-	"tabler-icons": await tablerIcons(),
-	majesticons: await majesticons(),
-	"feather-icons": await featherIcons(),
-	"font-awesome": await fontAwesome(),
-	"css-gg": await cssgg(),
-	"material-icons": await materialIcons(),
-	"box-icons": await boxIcons(),
+	// "heroicons": await heroicons(),
+	// "tabler-icons": await tablerIcons(),
+	// "majesticons": await majesticons(),
+	// "feather-icons": await featherIcons(),
+	// "font-awesome": await fontAwesome(),
+	// "css-gg": await cssgg(),
+	// "material-icons": await materialIcons(),
+	// "box-icons": await boxIcons(),
 };
 
 for (const [name, data] of Object.entries(icons)) {

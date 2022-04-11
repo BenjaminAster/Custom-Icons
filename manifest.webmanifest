@@ -1,0 +1,17 @@
+{
+	"name": "Custom icons",
+	"description": "Choose your own icons from various different icon sets and generate a CSS file with only those icons as inlined data-URIs.",
+	"start_url": "./",
+	"scope": "./",
+	"background_color": "black",
+	"theme_color": "black",
+	"display": "standalone",
+	"icons": [
+		{
+			"src": "./assets/icon.webp",
+			"sizes": "144x144",
+			"type": "image/webp",
+			"purpose": "maskable any"
+		}
+	]
+}

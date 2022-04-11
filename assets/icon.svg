@@ -1,0 +1,73 @@
+<svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+	<style>
+		:root {
+			color-scheme: dark light;
+			--gradient-from: deepSkyBlue;
+			--gradient-to: violet;
+		}
+
+		@media (prefers-color-scheme: light) {
+			:root {
+				--gradient-from: royalBlue;
+				--gradient-to: blueViolet;
+			}
+		}
+
+		mask {
+			stroke-width: 30;
+			fill: none;
+			stroke-linejoin: round;
+			stroke-linecap: round;
+			stroke: white;
+		}
+
+		.main-rect {
+			fill: url("#gradient");
+			mask: url("#main-mask");
+		}
+
+	</style>
+
+	<defs>
+		<linearGradient id="gradient" gradientTransform="rotate(45)">
+			<stop offset="0%" stop-color="var(--gradient-from)" />
+			<stop offset="100%" stop-color="var(--gradient-to)" />
+		</linearGradient>
+	</defs>
+
+	<mask id="main-mask">
+		<symbol id="circle">
+			<circle cx="120" cy="120" r="105" />
+		</symbol>
+
+		<symbol id="rhombus">
+			<path d="
+				M 120 15
+				l 105 105
+				l -105 105
+				l -105 -105
+				Z
+			" />
+		</symbol>
+
+		<symbol id="square">
+			<rect x="15" y="15" width="210" height="210" />
+		</symbol>
+
+		<symbol id="triangle">
+			<path d="
+				M 120 35
+				l 105 190
+				l -210 0
+				Z
+			" />
+		</symbol>
+
+		<use href="#circle" x="0" y="0" class="shape" />
+		<use href="#rhombus" x="240" y="0" class="shape" />
+		<use href="#square" x="0" y="240" class="shape" />
+		<use href="#triangle" x="240" y="240" class="shape" />
+	</mask>
+
+	<rect x="0" y="0" width="480" height="480" class="main-rect" />
+</svg>

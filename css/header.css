@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+header {
+	display: flex;
+	background-color: var(--gray-1);
+	align-items: center;
+	padding-inline-start: .6rem;
+}
+
+header > a {
+	--size: 2rem;
+	color: CanvasText;
+	transition: opacity .15s;
+}
+
+header > a:hover {
+	opacity: .8;
+}
+
+#color-scheme-chooser {
+	display: flex;
+	background-color: var(--gray-2);
+	margin: .4rem;
+	border-radius: 2rem;
+	margin-inline-start: auto;
+	padding: .3rem;
+	gap: .3rem;
+}
+
+#color-scheme-chooser > li {
+	display: block;
+}
+
+#color-scheme-chooser > li > label {
+	display: block;
+	border-radius: 2rem;
+}
+
+#color-scheme-chooser > li > label > input[type=radio]:focus-visible + div {
+	outline: 1px solid CanvasText;
+	outline-offset: 3px;
+}
+
+#color-scheme-chooser > li > label > input[type=radio]:checked + div {
+	background-color: var(--primary);
+	color: white;
+	transition: background-color .15s, color .15s;
+}
+
+#color-scheme-chooser > li > label > div {
+	display: flex;
+	gap: .3rem;
+	align-items: center;
+	padding-block: .2rem;
+	padding-inline: .4rem .5rem;
+	background-color: var(--gray-1);
+	border-radius: inherit;
+	transition: opacity .15s;
+}
+
+#color-scheme-chooser > li > label > div:hover {
+	opacity: .8;
+}
+

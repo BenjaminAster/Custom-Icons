@@ -1,16 +1,20 @@
 
 import { DOMParser } from "https://deno.land/x/deno_dom@v0.1.21-alpha/deno-dom-wasm.ts";
 
-export default async () => {
-	const icons: Record<string, any>[] = await Promise.all(["line", "solid"].map(async (type: string) => {
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-		const names = await (await globalThis.fetch(`https://api.github.com/repos/halfmage/majesticons/contents/${type}`)).json();
+export default async () => {
+	const icons: Record<string, any>[] = (await Promise.all(["line", "solid"].map(async (style: string) => {
+
+		const names = await (await globalThis.fetch(`https://api.github.com/repos/halfmage/majesticons/contents/${style}`)).json();
 
 		return await Promise.all(names.map(async ({ name: fileName }: { name: string }) => {
 			const name = fileName.replace(/\.svg$/, "");
 
+			await sleep(Math.random() * 10_000);
+
 			const svg = new DOMParser().parseFromString(
-				(await (await globalThis.fetch(`https://raw.githubusercontent.com/halfmage/majesticons/main/${type}/${name}.svg`)).text())
+				(await (await globalThis.fetch(`https://raw.githubusercontent.com/halfmage/majesticons/main/${style}/${name}.svg`)).text())
 					.replaceAll("\r", "")
 					.replaceAll(`"currentColor"`, `"black"`)
 					.replaceAll(/\>\n\s*\</g, "><"),
@@ -20,15 +24,14 @@ export default async () => {
 			return {
 				name,
 				tags: name.split("-"),
-				svg: svg.outerHTML,
+				svg: svg.outerHTML.replace(` viewbox=`, ` viewBox=`),
+				style,
 			};
 		}));
-	}).flat());
+	}))).flat();
 
 	return {
 		name: "Majesticons",
-		website: "https://majesticons.com",
-		repository: "https://github.com/halfmage/majesticons",
 		icons,
 	};
 };

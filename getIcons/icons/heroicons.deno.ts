@@ -9,9 +9,9 @@ export default async () => {
 		tags: [...new Set([...name.split("-"), ...tags.map((tag: string) => tag.split("-")).flat()])] as string[],
 	}));
 
-	const icons: Record<string, any>[] = await Promise.all(["outline", "solid"].map(async (type: string) => await Promise.all(data.map(async ({ name, tags }) => {
+	const icons: Record<string, any>[] = (await Promise.all(["outline", "solid"].map(async (style: string) => await Promise.all(data.map(async ({ name, tags }) => {
 		const svg = new DOMParser().parseFromString(
-			(await (await globalThis.fetch(`https://raw.githubusercontent.com/tailwindlabs/heroicons/master/optimized/${type}/${name}.svg`)).text())
+			(await (await globalThis.fetch(`https://raw.githubusercontent.com/tailwindlabs/heroicons/master/optimized/${style}/${name}.svg`)).text())
 				.replaceAll("\r", "")
 				.replaceAll(`"currentColor"`, `"black"`)
 				.replaceAll(/\>\n\s*\</g, "><"),
@@ -22,15 +22,14 @@ export default async () => {
 
 		return {
 			name,
-			tags: [...new Set([...tags, type])],
-			svg: svg.outerHTML,
+			tags: [...new Set([...tags, style])],
+			svg: svg.outerHTML.replace(` viewbox=`, ` viewBox=`),
+			style,
 		};
-	}))).flat());
+	}))))).flat();
 
 	return {
 		name: "Heroicons",
-		website: "https://heroicons.com",
-		repository: "https://github.com/tailwindlabs/heroicons",
 		icons,
 	};
 };
