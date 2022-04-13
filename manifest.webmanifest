@@ -8,9 +8,9 @@
 	"display": "standalone",
 	"icons": [
 		{
-			"src": "./assets/icon.webp",
+			"src": "./assets/icon.png",
 			"sizes": "144x144",
-			"type": "image/webp",
+			"type": "image/png",
 			"purpose": "maskable any"
 		}
 	]

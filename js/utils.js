@@ -25,7 +25,7 @@ export const storage = new class {
 };
 
 export const encodeForDataURI = (/** @type {string} */ string) => (
-	window.encodeURIComponent(string)
+	window.encodeURI(string)
 		.replaceAll(window.encodeURIComponent(`"`), `"`)
 		.replaceAll(window.encodeURIComponent(` `), ` `)
 		.replaceAll(window.encodeURIComponent(`<`), `<`)

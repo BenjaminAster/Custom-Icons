@@ -18,11 +18,11 @@
 	border-radius: .8rem;
 	padding: .3rem;
 	inline-size: 100%;
-	min-block-size: 2.6rem;
+	min-block-size: 2.8rem;
 	border: 1px solid var(--gray-2);
 }
 
-#selected-icons:not(:has(:scope > :not(template)))::before {
+#selected-icons:not(:has(> :not(template)))::before {
 	content: "No icons selected";
 	margin-inline-start: .5rem;
 	opacity: .7;

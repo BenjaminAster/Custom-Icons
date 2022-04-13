@@ -31,6 +31,7 @@
 	background-clip: text;
 	color: transparent;
 	inline-size: fit-content;
+	padding-block-end: .2em;
 }
 
 #icon-set-list > li > .loading-message {
@@ -54,10 +55,10 @@
 
 @keyframes spin {
 	from {
-		transform: rotate(0deg);
+		transform: rotate(0turn);
 	}
 	to {
-		transform: rotate(360deg);
+		transform: rotate(1turn);
 	}
 }
 

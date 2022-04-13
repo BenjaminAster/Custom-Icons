@@ -11,7 +11,8 @@
 
 	<base href="./" />
 
-	<link rel="icon" href="./assets/icon.svg" />
+	<link rel="icon" href="./assets/icon.svg" type="image/svg+xml" />
+	<link rel="icon" href="./assets/icon.png" type="image/png" />
 	<link rel="manifest" href="./manifest.webmanifest" />
 
 	<link rel="stylesheet" href="./css/main.css" />
@@ -27,6 +28,14 @@
 	<link rel="modulepreload" href="./js/utils.js" />
 	<link rel="modulepreload" href="./js/colorScheme.js" />
 	<link rel="modulepreload" href="./js/pwa.js" />
+
+	<script type="module">
+		// modulepreload polyfill for Firefox and Safari
+		import "./js/iconSets.js";
+		import "./js/utils.js";
+		import "./js/colorScheme.js";
+		import "./js/pwa.js";
+	</script>
 
 	<link rel="preload" as="fetch" crossorigin href="./icons/heroicons.min.json" />
 
